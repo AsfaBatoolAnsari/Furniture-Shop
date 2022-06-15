@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniture Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="https://kit.fontawesome.com/81b1288337.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <!--------------------NAVBAR--------------------->
+
+    <header>
+        <a href="#" class="logo">Furniture <span>Shop</span></a>
+        <div class="fas fa-bars" id="menu-icon"></div>
+
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#new-arrival-container">New Arrival</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#brands">Our Partners</a></li>
+            <li><a href="#footer">Contact</a></li>
+        </ul>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-text">
+            <h1><span>Make</span>Your Comfort <br>Is Our<span>Happiness</span></h1>
+            <p>Lorem Ipsum is simply dummy text of the printing.<br> Lorem Ipsum has been the industry's standard
+                dummy.<br>Text ever since the 1500s, when an unknown .</p>
+            <a href="shop" class="btn">Shop Now</a>
+        </div>
+    </section>
+
+    <!-------------NEW ARRIVAL-------------->
+
+    <div class="heading" id="new-arrival-container">
+        <h2><span>New </span> Arrival</h2>
+
+        <div class="new-arrival-1">
+            <img class="new1" src="images/new1.jpg" alt="img">
+            <img class="new2" src="images/new2.jpg" alt="img">
+            <img class="new3" src="images/new3.jpg" alt="img">
+        </div>
+
+        <div class="new-arrival-2">
+            <img class="new1" src="images/new4.jpg" alt="img">
+            <img class="new2" src="images/new5.jpg" alt="img">
+            <img class="new3" src="images/new6.jpg" alt="img">
+        </div>
+    </div>
+
+
+    <!-----------------------ABOUT--------------------->
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="images/bg.jpg" alt="img">
+        </div>
+        <div class="about-text">
+            <span>About Us</span>
+            <h2>Furniture is important part <br>for comfort</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br> Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s<br>, when an unknown printer took a galley of type
+                and scrambled it to make a type specimen book.<br>It has survived not only five centuries, but also the
+                leap into electronic typesetting,<br> remaining essentially unchanged. It was popularised in the 1960s
+                with the release of Letraset sheets containing Lorem Ipsum<br> passages, and more recently with desktop
+                publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+            <a href="#" class="btn">Learn More.</a>
+        </div>
+    </section>
+
+    <!-----------------------BRANDS------------------------->
+
+    <section class="brands" id="brands">
+        <div class="heading1">
+            <span>Brands</span>
+            <h2>Our Brands Partners</h2>
+        </div>
+        <div class="brands-container">
+            <img src="images/nestle.png">
+            <img src="images/oriflame.png">
+            <img src="images/mac.png">
+            <img src="images/pepsi.png">
+            <img src="images/hush-puppies.png">
+            <img src="images/loreal.png">
+        </div>
+    </section>
+    <section class="newsletter" id="contact">
+        <h2>Subscribe To Newsletter</h2>
+        <div class="news-box">
+            <input type="text" placeholder="Enter Your Email...">
+            <a href="#" class="btn">Subscribe</a>
+        </div>
+    </section>
+
+    <!----------------------FOOTER------------------------>
+
+    <footer>
+        <div class="footer" id="footer">
+            <h2>Furnituer <span>Shop</span></h2>
+            <p style="padding-bottom:3px ;"> Lorem Ipsum is simply dummy text<br></p>
+            <p style="padding-bottom:3px ;"> of the printing and typesetting industry.<br></p>
+            <p style="padding-bottom:3px ;"> Lorem Ipsum has been the industry's<br> </p>
+            <p style="padding-bottom:3px ;"> dummy text ever since the 1500s,<br></p>
+            <p style="padding-bottom:1.5rem ;"> when an unknown printer took!</p>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+        <div class="services">
+            <h2>Services</h2>
+            <ul>
+                <li style="padding-bottom:3px ;">Product</li>
+                <li style="padding-bottom:3px ;">Help & Support</li>
+                <li style="padding-bottom:3px ;">Pricing</li>
+                <li style="padding-bottom:3px ;">F A Q</li>
+            </ul>
+        </div>
+        <!----------------PRODUCT------------------->
+        <div class="product">
+            <h2>Product</h2>
+            <ul>
+                <li style="padding-bottom:3px ;">Sofa's</li>
+                <li style="padding-bottom:3px ;">Chair's</li>
+                <li style="padding-bottom:3px ;">Living Room</li>
+                <li style="padding-bottom:3px ;">Office</li>
+            </ul>
+        </div>
+        <!---------------CONTACT------------->
+        <div class="contact">
+            <h2>Contact</h2>
+            <ul>
+                <li>Karachi, Pakistan 10004</li>
+                <li>+92-345-567-643</li>
+                <li>shop@furnituer.com</li>
+            </ul>
+        </div>
+    </footer>
+     <!------------------COPYRIGHT---------------->
+    <div class="copyright">
+        <h2>Powered by <span>Asfa Batool</span></h2>
+    </div>
+
+</body>
+
+
+
+
+
+
+<!--------------------------JAVA SCRIPT----------------------->
+
+<script>
+    let menu = document.querySelector('.navbar');
+    
+    document.querySelector('#menu-icon').onclick = () =>{
+        menu.classList.toggle('active');
+    }
+    
+</script>
+
+
+
+</html>
